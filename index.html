@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Caesar Cipher Decoder</h1>
+        <p class="description">Enter the encoded text and the shift value (key) to decode the message.</p>
+
+        <div class="input-container">
+            <label for="encodedText" class="label">Encoded Text:</label>
+            <textarea id="encodedText" class="input" placeholder="Enter the encoded text here"></textarea>
+        </div>
+
+        <div class="input-container">
+            <label for="shiftValue" class="label">Shift Value (Key):</label>
+            <input type="number" id="shiftValue" class="input" placeholder="Enter shift value" />
+        </div>
+
+        <button class="decode-button" onclick="decodeCipher()">Decode Message</button>
+
+        <div class="output-container">
+            <h2 class="output-title">Decoded Message:</h2>
+            <p id="decodedMessage" class="output"></p>
+        </div>
+    </div>
+    <div class="footer">
+    <p>BY RITIK SAINI</p>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
